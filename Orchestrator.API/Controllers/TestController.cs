@@ -14,7 +14,7 @@ public class TestController : ControllerBase
     {
         _bus = bus;
     }
-
+    //Refact: немного не понял зачем нужен этот проект с апишкой, ты его для тестов используешь, я правильно понимаю?
     [HttpPost]
     public IActionResult CreateMessage()
     {

@@ -2,6 +2,8 @@ using StableDraw.Services.Orchestrator.BackgroundTasks.Models;
 
 namespace StableDraw.Services.Orchestrator.BackgroundTasks.Services;
 
+//Refact: тет не увидел где у нас сообщения хранятся через Redis а если это просто словарик то у нас проблема, тк сервис падает и мы теряем все данные
+// надо организовать хранения сообщений, как и в чем опять же на твой выбор
 public class MessageService
 {
     private readonly Dictionary<Guid, Message> _messages;

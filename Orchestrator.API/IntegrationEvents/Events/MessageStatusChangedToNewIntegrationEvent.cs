@@ -1,5 +1,6 @@
 namespace StableDraw.Services.Orchestrator.API.IntegrationEvents;
 
+//Refact
 public record MessageStatusChangedToNewIntegrationEvent
 {
     public Guid Id { get; set; }

@@ -20,7 +20,7 @@ public class MessageStatusChangedToCreatedIntegrationEventHandler : IConsumer<Me
         _messageService.Remove(messageId);
 
         _logger.Log(LogLevel.Information, "Message {messageId} was been processed", messageId);
-        
+
         return Task.CompletedTask;
     }
 }
